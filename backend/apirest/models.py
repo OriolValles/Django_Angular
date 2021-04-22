@@ -7,4 +7,4 @@ class Printer(models.Model):
     description = models.TextField()
 
     class Meta:
-        ordering = ['created']
+        ordering = ['name']

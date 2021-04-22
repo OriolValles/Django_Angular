@@ -1,6 +1,6 @@
-from django.contrib import admin
-from django.urls import path
-from backend.apirest import views
+from django.urls import include, path
+from rest_framework import routers
+from apirest import views
 
 router = routers.DefaultRouter()
 router.register(r'printers', views.PrinterViewSet)
