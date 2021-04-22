@@ -32,6 +32,6 @@ class PrinterTests(APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(Printer.objects.count(), 1)
-        self.assertEqual(Printer.objects.get().name, 'DabApps')
+        self.assertEqual(Printer.objects.get().name, 'Printer1')
         # Log out
         client.logout()
